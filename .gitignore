@@ -1,0 +1,29 @@
+# Runtime secrets and local configuration
+.env
+.env.*
+!.env.example
+couchdb/local.ini
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# CouchDB database and runtime state
+couchdb/data/
+couchdb/log/
+couchdb/*.log
+
+# Caddy certificates, state, and logs
+caddy/data/
+caddy/config/
+caddy/logs/
+
+# Local backups and editor/OS files
+backups/
+*.bak
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
